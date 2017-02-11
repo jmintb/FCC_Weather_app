@@ -18,30 +18,32 @@
 </head>
 
 
-<body>
+<body class="flex-container">
 
     <!-- title -->
-    <div>
-        <h1 class="center blue-text">
-          Weather App
-        </h1>
-    </div>
+
 
     <!-- weather info container -->
-    <div class="center container">
+    <div class=" flex-container card-panel">
+      <h1 class=" blue-text">
+        Weather App
+      </h1>
         <p id="location" class="blue-text">
             City/Country
         </p>
+        <div>
         <p id="temp">
             Temp
         </p>
 
-        <button id="unit-btn" class="btn btn-primary blue wave-effects"> Toggle Unit </button>
         <p id="weather-description">
           Weather description
         </p>
+      </div>
+          <i  id="weather-img" class="wi img-style"></i>
+        
+          <button id="unit-btn" class="btn btn-primary blue wave-effects"> Toggle Unit </button>
 
-          <i  id="weather-img" class="wi"></i>
 
     </div>
 

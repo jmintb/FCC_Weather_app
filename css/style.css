@@ -1,8 +1,30 @@
+html,body{
+  height: 90%;
+}
+
 p{
   font-weight: 800;
   font-size: 40px;
 }
 
+.flex-container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #temp{
   text-align: center;
+  display: inline;
+}
+
+#weather-description{
+  display: inline;
+  text-align: right;
+  margin-left: 10px;
+}
+
+  #weather-img{
+  font-size: 100px;
 }
