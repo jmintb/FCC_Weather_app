@@ -14,15 +14,31 @@ p{
   justify-content: center;
 }
 
+#ui-container{
+  width: 400px;
+  height: 450px;
+}
+
+#loading-animation {
+  margin: 85px;
+}
+
 #temp{
-  text-align: center;
-  display: inline;
+  align-self: center;
 }
 
 #weather-description{
   display: inline;
   text-align: right;
   margin-left: 10px;
+
+}
+
+#weather-container{
+  width: 80%;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
   #weather-img{

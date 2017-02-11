@@ -18,12 +18,7 @@ $(document).ready(function(){
 
   });
 
-
-
-
   IpAPI().getCity(requestWeather);
-
-
 
   function requestWeather(data){
     WeatherAPI(data).getWeather(applyWeatherData);
@@ -37,6 +32,9 @@ $(document).ready(function(){
     console.log(data.code);
     temp_celcius = data.temp;
     temp_fahrenheit = temp_celcius * 1.8 + 32;
+    $("#loading-animation").remove();
+    $("#weather-container").removeClass("hide");
+    $("#location").removeClass("hide");
   }
 
 
@@ -47,17 +45,12 @@ $(document).ready(function(){
 
     ipApi.getCity = function(callBack){
       $.get(api_url, function(data, status){
-        location = data.city+','+data.countryCode;
-        callBack(data.city+','+data.countryCode);
-        console.log(data.city+','+data.countryCode);
+        location = data.city+' , '+data.countryCode;
+        callBack(data.city+' , '+data.countryCode);
+        console.log(data.city+' , '+data.countryCode);
       })
     };
-
-
     return ipApi;
-
-
-
     }
 
     var WeatherAPI = function(location) {
@@ -84,8 +77,6 @@ $(document).ready(function(){
       };
 
       return weatherAPI;
-
-
 
     };
 
