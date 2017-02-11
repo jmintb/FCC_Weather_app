@@ -1,10 +1,15 @@
 html,body{
   height: 90%;
+
 }
 
 p{
   font-weight: 800;
   font-size: 40px;
+}
+
+h1{
+  font-size: 50px;
 }
 
 .flex-container{
@@ -20,11 +25,12 @@ p{
 }
 
 #loading-animation {
-  margin: 85px;
+  margin: 107px;
+
 }
 
 #temp{
-  align-self: center;
+
 }
 
 #weather-description{
